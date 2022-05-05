@@ -1,0 +1,10 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 0.1.0 (2022-05-05)
+
+
+### Features
+
+* init ([be80687](https://github.com/BlackGlory/extra-prompts/commit/be80687a16a122a2cfc2f06dcbc66f541447241a))
