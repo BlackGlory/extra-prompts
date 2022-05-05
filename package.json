@@ -1,0 +1,63 @@
+{
+  "name": "extra-prompts",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "main": "lib/es2018/index.js",
+  "types": "lib/es2018/index.d.ts",
+  "repository": "git@github.com:BlackGlory/extra-prompts.git",
+  "author": "BlackGlory <woshenmedoubuzhidao@blackglory.me>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --quiet src __tests__",
+    "test": "jest --no-cache --config jest.config.js",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
+    "test:coverage": "jest --coverage --config jest.config.js",
+    "prepublishOnly": "run-s clean build",
+    "clean": "run-p clean:*",
+    "clean:build": "rimraf lib",
+    "build": "run-p build:*",
+    "build:es2015": "run-s build:es2015:*",
+    "build:es2015:compile": "tsc --project tsconfig.build.json --module commonjs --target es2015 --outDir lib/es2015",
+    "build:es2015:patch": "tscpaths -p tsconfig.build.json -s ./src -o ./lib/es2015",
+    "build:es2018": "run-s build:es2018:*",
+    "build:es2018:compile": "tsc --project tsconfig.build.json --module commonjs --target es2018 --outDir lib/es2018",
+    "build:es2018:patch": "tscpaths -p tsconfig.build.json -s ./src -o ./lib/es2018",
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "run-s lint build test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@types/jest": "^27.5.0",
+    "@types/node": "16",
+    "@types/react": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.14.0",
+    "extra-promise": "^1.0.2",
+    "husky": "4",
+    "ink-testing-library": "^2.1.0",
+    "jest": "^27.4.5",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.3.2",
+    "ts-jest": "^27.1.2",
+    "tscpaths": "^0.0.9",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "ink": "^3.2.0",
+    "ink-select-input": "^4.2.1",
+    "react": "17"
+  }
+}
