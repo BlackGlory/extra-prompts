@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/BlackGlory/extra-prompts/compare/v0.1.0...v0.1.1) (2022-06-20)
+
+
+### Features
+
+* add waitInput ([09b26b8](https://github.com/BlackGlory/extra-prompts/commit/09b26b80ec4b8a51b841636568cc90d2b7c97a6a))
+
 ## 0.1.0 (2022-05-05)
 
 
