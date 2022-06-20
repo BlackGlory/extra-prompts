@@ -36,3 +36,11 @@ interface IOption<T> {
 
 function select<T>(message: string, options: IOption<T>[]): Promise<T>
 ```
+
+#### waitForInput
+```ts
+function waitForInput(
+  message: string
+, predicate?: (key: string) => boolean
+): Promise<string>
+```
