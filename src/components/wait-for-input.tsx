@@ -1,6 +1,6 @@
 import React from 'react'
-import { StandardInput } from '@components/standard-input'
-import { Box, Text } from 'ink'
+import { useStandardInput } from '@hooks/use-standard-input'
+import { Text } from 'ink'
 
 interface IWaitInputProps {
   message: string
@@ -11,18 +11,17 @@ interface IWaitInputProps {
 export function WaitForInput(props: IWaitInputProps) {
   const { message, predicate, callback } = props
 
+  useStandardInput(key => {
+    if (predicate) {
+      if (predicate(key)) {
+        callback(key)
+      }
+    } else {
+      callback(key)
+    }
+  })
+
   return (
-    <Box>
-      <Text>{message}</Text>
-      <StandardInput onInput={key => {
-        if (predicate) {
-          if (predicate(key)) {
-            callback(key)
-          }
-        } else {
-          callback(key)
-        }
-      }} />
-    </Box>
+    <Text>{message}</Text>
   )
 }
