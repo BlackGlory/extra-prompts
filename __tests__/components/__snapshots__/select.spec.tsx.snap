@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select onSelect 1`] = `
+"message:   Option 1
+         [34m❯[39m [34mOption 2[39m"
+`;
+
+exports[`Select render 1`] = `
+"message: [34m❯[39m [34mOption 1[39m
+           Option 2"
+`;
