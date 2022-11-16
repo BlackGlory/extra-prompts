@@ -6,28 +6,28 @@ npm install --save extra-prompts
 yarn add extra-prompts
 ```
 
-### API
-#### text
+## API
+### text
 ```ts
 function text(message: string): Promise<string>
 ```
 
-#### password
+### password
 ```ts
 function password(message: string): Promise<string>
 ```
 
-#### invisible
+### invisible
 ```ts
 function invisible(message: string): Promise<string>
 ```
 
-#### confirm
+### confirm
 ```ts
 function confirm(message: string, defaultValue: boolean): Promise<boolean>
 ```
 
-#### select
+### select
 ```ts
 interface IOption<T> {
   label: string
@@ -37,7 +37,7 @@ interface IOption<T> {
 function select<T>(message: string, options: IOption<T>[]): Promise<T>
 ```
 
-#### waitForInput
+### waitForInput
 ```ts
 function waitForInput(
   message: string
