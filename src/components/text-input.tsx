@@ -12,7 +12,9 @@ export function TextInput(props: ITextInputProps) {
   useInput((input, key) => {
     if (key.return) {
       onSubmit(value)
-    } else if (key.backspace) {
+    } else if (key.backspace || key.delete) {
+      // https://github.com/vadimdemedes/ink/issues/512
+
       setValue(value.slice(0, value.length - 1))
     } else {
       setValue(value + input)
