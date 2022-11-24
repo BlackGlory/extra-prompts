@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/BlackGlory/extra-prompts/compare/v0.1.4...v0.1.5) (2022-11-24)
+
+
+### Bug Fixes
+
+* backspace detection for `TextInpnt` ([e3d016c](https://github.com/BlackGlory/extra-prompts/commit/e3d016cf16c70b0a59799f15731d7e89eb464ba6))
+
 ### [0.1.4](https://github.com/BlackGlory/extra-prompts/compare/v0.1.3...v0.1.4) (2022-11-16)
 
 ### [0.1.3](https://github.com/BlackGlory/extra-prompts/compare/v0.1.2...v0.1.3) (2022-08-01)
