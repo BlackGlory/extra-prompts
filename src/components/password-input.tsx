@@ -1,4 +1,3 @@
-import React from 'react'
 import { Transform } from 'ink'
 import { TextInput } from '@components/text-input'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, Text as InkText } from 'ink'
 import { PasswordInput } from '@components/password-input'
 

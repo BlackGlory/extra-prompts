@@ -1,4 +1,3 @@
-import React from 'react'
 import { WaitForInput } from '@components/wait-for-input'
 import { render } from 'ink'
 

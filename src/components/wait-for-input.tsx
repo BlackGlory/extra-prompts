@@ -1,4 +1,3 @@
-import React from 'react'
 import { useStandardInput } from '@hooks/use-standard-input'
 import { Text } from 'ink'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Confirm } from '@components/confirm'
 import { render } from 'ink'
 

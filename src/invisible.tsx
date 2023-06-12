@@ -1,4 +1,3 @@
-import React from 'react'
 import { Invisible } from '@components/invisible'
 import { render } from 'ink'
 

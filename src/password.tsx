@@ -1,4 +1,3 @@
-import React from 'react'
 import { Password } from '@components/password'
 import { render } from 'ink'
 

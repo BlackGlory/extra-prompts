@@ -1,4 +1,3 @@
-import React from 'react'
 import { useStdin } from 'ink'
 import { useMount } from 'extra-react-hooks'
 import { assert } from '@blackglory/prelude'
