@@ -1,5 +1,5 @@
 import { Box, Text as InkText } from 'ink'
-import { InvisibleInput } from '@components/invisible-input'
+import { InvisibleInput } from '@components/invisible-input.js'
 
 interface IInvisibleProps {
   message: string

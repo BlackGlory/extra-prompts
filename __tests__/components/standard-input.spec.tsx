@@ -1,10 +1,10 @@
-import { StandardInput } from '@components/standard-input'
+import { StandardInput } from '@components/standard-input.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('StandardInput', () => {
   test('render', () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame } = render(
       <StandardInput onInput={fn} />
     )
@@ -15,7 +15,7 @@ describe('StandardInput', () => {
 
   describe('onInput', () => {
     test('text', async () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { stdin, lastFrame } = render(
         <StandardInput onInput={fn} />
       )
@@ -33,7 +33,7 @@ describe('StandardInput', () => {
     })
 
     test('with modifier keys', async () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { stdin, lastFrame } = render(
         <StandardInput onInput={fn} />
       )

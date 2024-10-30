@@ -1,10 +1,10 @@
-import { Text } from '@components/text'
+import { Text } from '@components/text.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('Text', () => {
   test('render', () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame } = render(
       <Text
         message='message'
@@ -17,7 +17,7 @@ describe('Text', () => {
   })
 
   test('onSubmit', async () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { stdin, lastFrame } = render(
       <Text
         message='message'

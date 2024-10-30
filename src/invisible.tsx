@@ -1,4 +1,4 @@
-import { Invisible } from '@components/invisible'
+import { Invisible } from '@components/invisible.js'
 import { render } from 'ink'
 
 export function invisible(message: string): Promise<string> {

@@ -1,10 +1,10 @@
-import { WaitForInput } from '@components/wait-for-input'
+import { WaitForInput } from '@components/wait-for-input.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('waitForInput', () => {
   test('render', () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame } = render(
       <WaitForInput
         message='message'
@@ -18,7 +18,7 @@ describe('waitForInput', () => {
 
   describe('callback', () => {
     test('text', async () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { stdin, lastFrame } = render(
         <WaitForInput
           message='message'
@@ -39,7 +39,7 @@ describe('waitForInput', () => {
     })
 
     test('with modifier keys', async () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { stdin, lastFrame } = render(
         <WaitForInput
           message='message'
@@ -60,7 +60,7 @@ describe('waitForInput', () => {
     })
 
     test('with predicate', async () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { stdin, lastFrame } = render(
         <WaitForInput
           message='message'

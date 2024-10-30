@@ -1,11 +1,11 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Select onSelect 1`] = `
+exports[`Select > onSelect 1`] = `
 "message:   Option 1
-         ❯ Option 2"
+         [34m❯[39m [34mOption 2[39m"
 `;
 
-exports[`Select render 1`] = `
-"message: ❯ Option 1
+exports[`Select > render 1`] = `
+"message: [34m❯[39m [34mOption 1[39m
            Option 2"
 `;

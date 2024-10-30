@@ -1,4 +1,4 @@
-import { WaitForInput } from '@components/wait-for-input'
+import { WaitForInput } from '@components/wait-for-input.js'
 import { render } from 'ink'
 
 export function waitForInput(

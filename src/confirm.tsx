@@ -1,4 +1,4 @@
-import { Confirm } from '@components/confirm'
+import { Confirm } from '@components/confirm.js'
 import { render } from 'ink'
 
 export function confirm(message: string, defaultValue: boolean): Promise<boolean> {

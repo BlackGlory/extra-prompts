@@ -1,10 +1,10 @@
-import { Invisible } from '@components/invisible'
+import { Invisible } from '@components/invisible.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('Invisible', () => {
   test('render', async () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame } = render(
       <Invisible
         message='message'
@@ -17,7 +17,7 @@ describe('Invisible', () => {
   })
 
   test('onSubmit', async () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { stdin, lastFrame } = render(
       <Invisible
         message='message'

@@ -1,11 +1,11 @@
-import { Confirm } from '@components/confirm'
+import { Confirm } from '@components/confirm.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('Confirm', () => {
   describe('render', () => {
     test('defaultValue = true', () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { lastFrame } = render(
         <Confirm
           message='message'
@@ -19,7 +19,7 @@ describe('Confirm', () => {
     })
 
     test('defaultValue = false', () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { lastFrame } = render(
         <Confirm
           message='message'
@@ -35,7 +35,7 @@ describe('Confirm', () => {
 
   describe('defaultValue', () => {
     test('defaultValue = true', async () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { stdin, lastFrame } = render(
         <Confirm
           message='message'
@@ -54,7 +54,7 @@ describe('Confirm', () => {
     })
 
     test('defaultValue = false', async () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { stdin, lastFrame } = render(
         <Confirm
           message='message'
@@ -75,7 +75,7 @@ describe('Confirm', () => {
 
   describe('onSubmit', () => {
     test('yes', async () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { stdin, lastFrame } = render(
         <Confirm
           message='message'
@@ -96,7 +96,7 @@ describe('Confirm', () => {
     })
 
     test('no', async () => {
-      const fn = jest.fn()
+      const fn = vi.fn()
       const { stdin, lastFrame } = render(
         <Confirm
           message='message'

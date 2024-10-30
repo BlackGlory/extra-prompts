@@ -1,7 +1,7 @@
 import { render } from 'ink'
-import { Select, IOption } from '@components/select'
+import { Select, IOption } from '@components/select.js'
 
-export { IOption } from '@components/select'
+export { IOption } from '@components/select.js'
 
 export function select<T>(message: string, options: IOption<T>[]): Promise<T> {
   return new Promise(resolve => {

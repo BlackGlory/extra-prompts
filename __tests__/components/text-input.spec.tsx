@@ -1,10 +1,10 @@
-import { TextInput } from '@components/text-input'
+import { TextInput } from '@components/text-input.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('TextInput', () => {
   test('render', () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame } = render(
       <TextInput onSubmit={fn} />
     )
@@ -14,7 +14,7 @@ describe('TextInput', () => {
   })
 
   test('onSubmit', async () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { stdin, lastFrame } = render(
       <TextInput onSubmit={fn} />
     )

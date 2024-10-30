@@ -1,4 +1,4 @@
-import { useStandardInput } from '@hooks/use-standard-input'
+import { useStandardInput } from '@hooks/use-standard-input.js'
 import { Text } from 'ink'
 
 interface IWaitInputProps {

@@ -1,10 +1,10 @@
-import { Password } from '@components/password'
+import { Password } from '@components/password.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('Password', () => {
   test('render', () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame } = render(
       <Password
         message='message'
@@ -17,7 +17,7 @@ describe('Password', () => {
   })
 
   test('onSubmit', async () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { stdin, lastFrame } = render(
       <Password
         message='message'

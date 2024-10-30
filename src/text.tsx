@@ -1,4 +1,4 @@
-import { Text } from '@components/text'
+import { Text } from '@components/text.js'
 import { render } from 'ink'
 
 export function text(message: string): Promise<string> {

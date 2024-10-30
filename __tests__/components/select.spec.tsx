@@ -1,10 +1,10 @@
-import { Select } from '@components/select'
+import { Select } from '@components/select.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('Select', () => {
   test('render', () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame } = render(
       <Select
         message='message'
@@ -21,7 +21,7 @@ describe('Select', () => {
   })
 
   test('onSelect', async () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame, stdin } = render(
       <Select
         message='message'

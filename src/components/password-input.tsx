@@ -1,5 +1,5 @@
 import { Transform } from 'ink'
-import { TextInput } from '@components/text-input'
+import { TextInput } from '@components/text-input.js'
 
 interface IPasswordInput {
   onSubmit(value: string): void

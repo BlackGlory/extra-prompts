@@ -1,10 +1,10 @@
-import { InvisibleInput } from '@components/invisible-input'
+import { InvisibleInput } from '@components/invisible-input.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('InvisibleInput', () => {
   test('render', async () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame } = render(
       <InvisibleInput onSubmit={fn} />
     )
@@ -14,7 +14,7 @@ describe('InvisibleInput', () => {
   })
 
   test('onSubmit', async () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { stdin, lastFrame } = render(
       <InvisibleInput onSubmit={fn} />
     )

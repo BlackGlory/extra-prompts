@@ -1,10 +1,10 @@
-import { PasswordInput } from '@components/password-input'
+import { PasswordInput } from '@components/password-input.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
 
 describe('PasswordInput', () => {
   test('render', () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { lastFrame } = render(
       <PasswordInput onSubmit={fn} />
     )
@@ -14,7 +14,7 @@ describe('PasswordInput', () => {
   })
 
   test('onSubmit', async () => {
-    const fn = jest.fn()
+    const fn = vi.fn()
     const { stdin, lastFrame } = render(
       <PasswordInput onSubmit={fn} />
     )

@@ -1,4 +1,4 @@
-import { Password } from '@components/password'
+import { Password } from '@components/password.js'
 import { render } from 'ink'
 
 export function password(message: string): Promise<string> {

@@ -1,5 +1,5 @@
 import { Box, Text as InkText } from 'ink'
-import { PasswordInput } from '@components/password-input'
+import { PasswordInput } from '@components/password-input.js'
 
 interface IPasswordProps {
   message: string
