@@ -3,6 +3,7 @@ import { TextInput } from '@inkjs/ui'
 
 interface ITextProps {
   message: string
+
   onSubmit(value: string): void
 }
 

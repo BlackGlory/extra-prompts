@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MultiSelect > onSelect 1`] = `
+message:   Option 1
+           Option 2 ✔
+         ❯ Option 3 ✔
+`;
+
+exports[`MultiSelect > render 1`] = `
+message: ❯ Option 1
+           Option 2
+           Option 3
+`;

@@ -1,15 +1,12 @@
 import { Box, Text } from 'ink'
 import { Select as SelectInput } from '@inkjs/ui'
+import { IOption } from '@src/types.js'
 
 interface ISelectOptions<T> {
   message: string
   options: IOption<T>[]
-  onSelect: (option: IOption<T>) => void
-}
 
-export interface IOption<T> {
-  label: string
-  value: T
+  onSelect: (option: IOption<T>) => void
 }
 
 export function Select<T>(props: ISelectOptions<T>) {

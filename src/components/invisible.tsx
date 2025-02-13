@@ -3,6 +3,7 @@ import { InvisibleInput } from '@components/invisible-input.js'
 
 interface IInvisibleProps {
   message: string
+
   onSubmit(value: string): void
 }
 

@@ -3,6 +3,7 @@ import { Text } from 'ink'
 
 interface IWaitInputProps {
   message: string
+
   callback: (key: string) => void
   predicate?: (key: string) => boolean
 }

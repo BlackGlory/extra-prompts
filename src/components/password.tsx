@@ -3,6 +3,7 @@ import { PasswordInput } from '@inkjs/ui'
 
 interface IPasswordProps {
   message: string
+
   onSubmit(value: string): void
 }
 

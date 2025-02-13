@@ -7,6 +7,13 @@ yarn add extra-prompts
 ```
 
 ## API
+```ts
+interface IOption<T> {
+  label: string
+  value: T
+}
+```
+
 ### text
 ```ts
 function text(message: string): Promise<string>
@@ -29,12 +36,12 @@ function confirm(message: string, defaultValue: boolean): Promise<boolean>
 
 ### select
 ```ts
-interface IOption<T> {
-  label: string
-  value: T
-}
-
 function select<T>(message: string, options: IOption<T>[]): Promise<T>
+```
+
+### selectMultiple
+```ts
+function selectMultiple<T>(message: string, options: IOption<T>[]): Promise<T[]>
 ```
 
 ### waitForInput

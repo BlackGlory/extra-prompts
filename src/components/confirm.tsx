@@ -4,6 +4,7 @@ import { TextInput } from '@inkjs/ui'
 interface IConfirmProps {
   message: string
   defaultValue: boolean
+
   onSubmit(value: boolean): void
 }
 
