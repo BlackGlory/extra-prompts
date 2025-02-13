@@ -20,7 +20,7 @@
   "scripts": {
     "prepare": "ts-patch install -s",
     "lint": "eslint --quiet src __tests__",
-    "test": "vitest --run --passWithNoTests",
+    "test": "cross-env CI=true vitest --run --passWithNoTests",
     "prepublishOnly": "run-s prepare clean build",
     "clean": "run-p clean:*",
     "clean:build": "rimraf lib",
@@ -40,6 +40,7 @@
     "@types/react": "18.3.12",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.12.2",
+    "cross-env": "^7.0.3",
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",

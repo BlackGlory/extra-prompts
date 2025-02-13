@@ -1,13 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Confirm > defaultValue > defaultValue = false 1`] = `"message(y/N): [7m [27m"`;
+exports[`Confirm > defaultValue > defaultValue = false 1`] = `"message(y/N):"`;
 
-exports[`Confirm > defaultValue > defaultValue = true 1`] = `"message(Y/n): [7m [27m"`;
+exports[`Confirm > defaultValue > defaultValue = true 1`] = `"message(Y/n):"`;
 
-exports[`Confirm > onSubmit > no 1`] = `"message(Y/n): no[7m [27m"`;
+exports[`Confirm > onSubmit > no 1`] = `"message(Y/n): no"`;
 
-exports[`Confirm > onSubmit > yes 1`] = `"message(Y/n): yes[7m [27m"`;
+exports[`Confirm > onSubmit > yes 1`] = `"message(Y/n): yes"`;
 
-exports[`Confirm > render > defaultValue = false 1`] = `"message(y/N): [7m [27m"`;
+exports[`Confirm > render > defaultValue = false 1`] = `"message(y/N):"`;
 
-exports[`Confirm > render > defaultValue = true 1`] = `"message(Y/n): [7m [27m"`;
+exports[`Confirm > render > defaultValue = true 1`] = `"message(Y/n):"`;
