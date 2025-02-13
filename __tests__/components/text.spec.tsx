@@ -12,7 +12,7 @@ describe('Text', () => {
       />
     )
 
-    expect(lastFrame()).toBe('message:')
+    expect(lastFrame()).toMatchSnapshot()
     expect(fn).toBeCalledTimes(0)
   })
 
@@ -31,7 +31,7 @@ describe('Text', () => {
     stdin.write('\r')
     await delay(100)
 
-    expect(lastFrame()).toBe('message: hello')
+    expect(lastFrame()).toMatchSnapshot()
     expect(fn).toBeCalledTimes(1)
     expect(fn).toBeCalledWith('hello')
   })

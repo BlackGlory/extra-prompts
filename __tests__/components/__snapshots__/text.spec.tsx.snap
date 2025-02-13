@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Text > onSubmit 1`] = `"message: hello[7m [27m"`;
+
+exports[`Text > render 1`] = `"message: [7m [27m"`;

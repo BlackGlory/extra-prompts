@@ -1,5 +1,5 @@
 import { Box, Text as InkText } from 'ink'
-import { TextInput } from '@components/text-input.js'
+import { TextInput } from '@inkjs/ui'
 
 interface ITextProps {
   message: string

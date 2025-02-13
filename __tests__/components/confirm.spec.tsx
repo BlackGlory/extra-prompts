@@ -14,7 +14,7 @@ describe('Confirm', () => {
         />
       )
 
-      expect(lastFrame()).toBe('message(Y/n):')
+      expect(lastFrame()).toMatchSnapshot()
       expect(fn).toBeCalledTimes(0)
     })
 
@@ -28,7 +28,7 @@ describe('Confirm', () => {
         />
       )
 
-      expect(lastFrame()).toBe('message(y/N):')
+      expect(lastFrame()).toMatchSnapshot()
       expect(fn).toBeCalledTimes(0)
     })
   })
@@ -48,7 +48,7 @@ describe('Confirm', () => {
       stdin.write('\r')
       await delay(100)
 
-      expect(lastFrame()).toBe('message(Y/n):')
+      expect(lastFrame()).toMatchSnapshot()
       expect(fn).toBeCalledTimes(1)
       expect(fn).toBeCalledWith(true)
     })
@@ -67,7 +67,7 @@ describe('Confirm', () => {
       stdin.write('\r')
       await delay(100)
 
-      expect(lastFrame()).toBe('message(y/N):')
+      expect(lastFrame()).toMatchSnapshot()
       expect(fn).toBeCalledTimes(1)
       expect(fn).toBeCalledWith(false)
     })
@@ -90,7 +90,7 @@ describe('Confirm', () => {
       stdin.write('\r')
       await delay(100)
 
-      expect(lastFrame()).toBe('message(Y/n): yes')
+      expect(lastFrame()).toMatchSnapshot()
       expect(fn).toBeCalledTimes(1)
       expect(fn).toBeCalledWith(true)
     })
@@ -111,7 +111,7 @@ describe('Confirm', () => {
       stdin.write('\r')
       await delay(100)
 
-      expect(lastFrame()).toBe('message(Y/n): no')
+      expect(lastFrame()).toMatchSnapshot()
       expect(fn).toBeCalledTimes(1)
       expect(fn).toBeCalledWith(false)
     })

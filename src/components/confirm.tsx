@@ -1,5 +1,5 @@
 import { Box, Text } from 'ink'
-import { TextInput } from '@components/text-input.js'
+import { TextInput } from '@inkjs/ui'
 
 interface IConfirmProps {
   message: string

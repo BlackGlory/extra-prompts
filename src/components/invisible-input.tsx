@@ -1,5 +1,5 @@
 import { Transform } from 'ink'
-import { TextInput } from '@components/text-input.js'
+import { TextInput } from '@inkjs/ui'
 
 interface IInvisibleInput {
   onSubmit(value: string): void
