@@ -59,10 +59,10 @@
   },
   "dependencies": {
     "@blackglory/prelude": "^0.4.0",
+    "@inkjs/ui": "^2.0.0",
     "extra-defer": "^0.3.1",
     "extra-react-hooks": "^0.6.9",
     "ink": "^5.0.1",
-    "ink-select-input": "^6.0.0",
     "react": "18.3.1"
   }
 }

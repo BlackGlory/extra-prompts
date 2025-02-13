@@ -2,7 +2,7 @@
 
 exports[`Select > onSelect 1`] = `
 message:   Option 1
-         ❯ Option 2
+         ❯ Option 2 ✔
 `;
 
 exports[`Select > render 1`] = `

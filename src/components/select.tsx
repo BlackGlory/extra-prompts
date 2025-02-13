@@ -1,5 +1,5 @@
 import { Box, Text } from 'ink'
-import SelectInput from 'ink-select-input'
+import { Select as SelectInput } from '@inkjs/ui'
 
 interface ISelectOptions<T> {
   message: string
@@ -19,15 +19,15 @@ export function Select<T>(props: ISelectOptions<T>) {
     <Box>
       <Text>{message}: </Text>
       <SelectInput
-        items={options.map(option => ({
+        options={options.map((option, i) => ({
           label: option.label
-        , value: option.value
+        , value: i.toString()
         }))}
-        onSelect={item => {
-          onSelect({
-            label: item.label
-          , value: item.value
-          })
+        onChange={indexString => {
+          const index = Number(indexString)
+          const option = options[index]
+
+          onSelect(option)
         }}
       />
     </Box>
