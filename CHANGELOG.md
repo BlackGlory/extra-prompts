@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/BlackGlory/extra-prompts/compare/v0.2.0...v0.2.1) (2025-02-13)
+
+
+### Features
+
+* add `selectMultiple` ([8bca4b2](https://github.com/BlackGlory/extra-prompts/commit/8bca4b21910dc3405b508dd5e5bc13461d2a0ec4))
+
 ## [0.2.0](https://github.com/BlackGlory/extra-prompts/compare/v0.1.6...v0.2.0) (2024-10-30)
 
 
