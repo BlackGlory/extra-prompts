@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/BlackGlory/extra-prompts/compare/v0.2.2...v0.2.3) (2025-07-08)
+
+
+### Features
+
+* **package.json:** add the `overrides` field to fix ink ([362d4d8](https://github.com/BlackGlory/extra-prompts/commit/362d4d83f42ebf63a1a3f0eb3b29a963b26900fe))
+
 ### [0.2.2](https://github.com/BlackGlory/extra-prompts/compare/v0.2.1...v0.2.2) (2025-02-13)
 
 ### [0.2.1](https://github.com/BlackGlory/extra-prompts/compare/v0.2.0...v0.2.1) (2025-02-13)
