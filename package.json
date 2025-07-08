@@ -65,10 +65,5 @@
     "extra-react-hooks": "^0.6.9",
     "ink": "^5.0.1",
     "react": "^18.3.1"
-  },
-  "overrides": {
-    "ink": {
-      "react": "^18.3.1"
-    }
   }
 }
