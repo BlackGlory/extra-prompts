@@ -1,3 +1,4 @@
+import { describe, test, vi, expect } from 'vitest'
 import { Confirm } from '@components/confirm.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'

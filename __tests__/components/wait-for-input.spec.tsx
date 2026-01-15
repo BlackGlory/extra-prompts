@@ -1,3 +1,4 @@
+import { describe, test, vi, expect } from 'vitest'
 import { WaitForInput } from '@components/wait-for-input.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'

@@ -1,3 +1,4 @@
+import { describe, test, vi, expect } from 'vitest'
 import { Password } from '@components/password.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'

@@ -34,34 +34,34 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
-    "@types/node": "22",
-    "@types/react": "^19.1.8",
-    "cross-env": "^7.0.3",
-    "eslint": "^9.30.1",
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "@types/node": "^22.19.6",
+    "@types/react": "^19.2.8",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.39.2",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "extra-promise": "^7.0.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "extra-promise": "^7.0.1",
     "husky": "4",
     "ink-testing-library": "^4.0.0",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^6.0.1",
+    "rimraf": "^6.1.2",
     "standard-version": "^9.5.0",
     "ts-patch": "^3.3.0",
-    "typescript": "5.8.3",
-    "typescript-eslint": "^8.36.0",
-    "typescript-transform-paths": "^3.5.5",
-    "vite": "^7.0.2",
-    "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.2.4"
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.53.0",
+    "typescript-transform-paths": "^3.5.6",
+    "vite": "^7.3.1",
+    "vite-tsconfig-paths": "^6.0.4",
+    "vitest": "^4.0.17"
   },
   "dependencies": {
     "@blackglory/prelude": "^0.4.0",
     "@inkjs/ui": "^2.0.0",
     "extra-defer": "^0.3.1",
-    "extra-react-hooks": "^0.8.6",
-    "ink": "^6.0.1",
-    "react": "^19.1.0"
+    "extra-react-hooks": "^0.8.7",
+    "ink": "^6.6.0",
+    "react": "^19.2.3"
   }
 }

@@ -1,3 +1,4 @@
+import { describe, test, vi, expect } from 'vitest'
 import { StandardInput } from '@components/standard-input.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'

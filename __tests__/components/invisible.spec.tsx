@@ -1,3 +1,4 @@
+import { describe, test, vi, expect } from 'vitest'
 import { Invisible } from '@components/invisible.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'

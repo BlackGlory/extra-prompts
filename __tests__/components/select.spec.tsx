@@ -1,7 +1,7 @@
+import { describe, test, vi, expect } from 'vitest'
 import { Select } from '@components/select.js'
 import { render } from 'ink-testing-library'
 import { delay } from 'extra-promise'
-import { expect } from 'vitest'
 import { stripVTControlCharacters } from 'util'
 
 expect.addSnapshotSerializer({
