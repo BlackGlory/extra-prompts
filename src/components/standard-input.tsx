@@ -10,7 +10,5 @@ export function StandardInput(props: IStandardInputProps) {
 
   useStandardInput(onInput)
 
-  return (
-    <></>
-  )
+  return null
 }
